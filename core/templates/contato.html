@@ -1,0 +1,67 @@
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro de Contato</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="/static/admin/css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <form class="form-horizontal" action="" method="POST">
+        <fieldset>
+            <legend>Cadastro de contato</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nome">Nome:</label>
+                <div class="col-md-4">
+                    <input id="nome" name="nome" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="telefone">Telefone:</label>
+                <div class="col-md-4">
+                    <input id="telefone" name="telefone" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">E-mail:</label>
+                <div class="col-md-4">
+                    <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="cpf">CPF:</label>
+                <div class="col-md-4">
+                    <input id="cpf" name="cpf" type="text" placeholder="" class="form-control input-md">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="sexo">Sexo:</label>
+                <div class="col-md-4">
+                    <select id="sexo" name="sexo" class="form-control">
+                        <option value="Não informado">Não informado</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="data_nascimento">Data de Nascimento:</label>
+                <div class="col-md-4">
+                    <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="cadastrar"></label>
+                <div class="col-md-4">
+                    <a href="/menu/">
+                        <button id="cadastrar" name="cadastrar" class="btn btn-primary">Cadastrar</button>
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
